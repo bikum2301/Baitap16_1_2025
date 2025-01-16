@@ -20,6 +20,7 @@ public class primeActivity extends AppCompatActivity {
     private EditText inputNumbers;
     private Button checkPrimesButton;
     private TextView resultTextView;
+    private Button backButton; 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,8 @@ public class primeActivity extends AppCompatActivity {
         inputNumbers = findViewById(R.id.inputNumbers);
         checkPrimesButton = findViewById(R.id.checkPrimesButton);
         resultTextView = findViewById(R.id.resultTextView);
+        backButton = findViewById(R.id.backButton); // Liên kết nút Quay về
+
 
         checkPrimesButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,6 +65,14 @@ public class primeActivity extends AppCompatActivity {
                 resultTextView.setText(result.toString());
             }
         });
+
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 
     private ArrayList<Integer> parseInput(String input) {
@@ -71,7 +82,7 @@ public class primeActivity extends AppCompatActivity {
             try {
                 numbers.add(Integer.parseInt(part.trim()));
             } catch (NumberFormatException e) {
-                // Bỏ qua các phần không phải số
+
             }
         }
         return numbers;

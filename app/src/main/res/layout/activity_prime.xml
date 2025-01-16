@@ -18,14 +18,22 @@
         android:id="@+id/checkPrimesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kiểm tra "
+        android:text="Kiểm tra"
         android:layout_marginTop="16dp" />
 
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kết quả "
+        android:text="Kết quả"
+        android:layout_marginTop="16dp" />
+
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quay về"
         android:layout_marginTop="16dp" />
 
 </LinearLayout>

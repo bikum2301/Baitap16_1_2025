@@ -16,6 +16,7 @@ public class SquareActivity extends AppCompatActivity {
     private EditText inputNumber;
     private Button checkSquareButton;
     private TextView resultTextView;
+    private Button backButton; // Thêm biến cho nút Quay về
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,8 @@ public class SquareActivity extends AppCompatActivity {
         inputNumber = findViewById(R.id.inputNumber);
         checkSquareButton = findViewById(R.id.checkSquareButton);
         resultTextView = findViewById(R.id.resultTextView);
+        backButton = findViewById(R.id.backButton);
+
 
         checkSquareButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +63,14 @@ public class SquareActivity extends AppCompatActivity {
                 } catch (NumberFormatException e) {
                     Toast.makeText(SquareActivity.this, "Định dạng nhập không hợp lệ! Vui lòng nhập một số nguyên.", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
             }
         });
     }
