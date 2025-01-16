@@ -20,7 +20,7 @@ public class primeActivity extends AppCompatActivity {
     private EditText inputNumbers;
     private Button checkPrimesButton;
     private TextView resultTextView;
-    private Button backButton; 
+    private Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

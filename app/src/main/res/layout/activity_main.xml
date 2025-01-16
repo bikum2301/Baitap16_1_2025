@@ -35,19 +35,40 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="8dp" />
 
+    <!-- Nút "Bài tập" -->
     <Button
-        android:id="@+id/primeButton"
+        android:id="@+id/exerciseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bài in số nguyên tố"
+        android:text="Bài tập"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="16dp" />
-    <Button
-        android:id="@+id/squareButton"
+
+    <!-- LinearLayout chứa hai nút con -->
+    <LinearLayout
+        android:id="@+id/exerciseButtonsLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bài in số chính phương"
+        android:orientation="vertical"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/primeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bài in số nguyên tố"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+        <Button
+            android:id="@+id/squareButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bài in số chính phương"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
 
 </LinearLayout>
