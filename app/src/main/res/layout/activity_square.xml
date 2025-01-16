@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/checkSquareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kiểm tra"
+        android:layout_marginTop="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kết quả"
+            android:padding="8dp"
+            android:background="@android:color/darker_gray"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </ScrollView>
+
+</LinearLayout>

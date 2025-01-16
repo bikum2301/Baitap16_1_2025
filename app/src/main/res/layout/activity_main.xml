@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/your_image"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trần Đông Phương - 22162034"
+        android:textSize="24sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/positionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sinh viên ngành An toàn thông tin"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/primeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bài in số nguyên tố"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/squareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bài in số chính phương"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
